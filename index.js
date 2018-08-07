@@ -13,9 +13,11 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
 }
 function deleteFromObjectByKey(object, key){
  var obj = { prop: 1 }
-      var newObj = deleteFromObjectByKey(obj, 'prop')
+  var newObj = deleteFromObjectByKey(obj, 'prop')
+  expect(newObj['prop']).toBe(undefined)
 
-      expect(newObj['prop']).toBe(undefined)
+  deleteFromObjectByKey(obj, 'prop')
+  expect(obj['prop']).toBe(1)
 }
 function destructivelyDeleteFromObjectByKey(object, key){
   
