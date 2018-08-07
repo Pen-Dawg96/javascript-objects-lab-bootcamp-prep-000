@@ -16,5 +16,5 @@ function deleteFromObjectByKey(object, key){
   delete newRecipe.flour
 }
 function destructivelyDeleteFromObjectByKey(object, key){
-  
+  delete recipe.eggs
 }
