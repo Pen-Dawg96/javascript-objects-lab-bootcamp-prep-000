@@ -5,5 +5,5 @@ function updateObjectWithKeyAndValue(object, key, value){
   updateObjectWithKeyAndValue(recipes, 'chocolate', '1 cup')
 }
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-  obect[key]
+  obect[key] = value
 }
